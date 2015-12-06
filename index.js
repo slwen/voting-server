@@ -1,9 +1,11 @@
 import makeStore from './src/store'
 import startServer from './src/server'
 
+const port = 8090
 export const store = makeStore()
 
-startServer(store)
+startServer(store, port)
+console.log(`Serving from port: ${port}`)
 
 /**
  * Load up some test data just so we can
