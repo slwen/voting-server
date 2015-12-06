@@ -1,7 +1,6 @@
 # Voting Server
 
-Voting server client based on:
-http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html#receiving-actions-from-the-server
+Node voting server based on: [Full Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html#receiving-actions-from-the-server)
 
 ### Commands
 
