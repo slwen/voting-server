@@ -40,7 +40,11 @@ export function next(state) {
 }
 
 export function vote(voteState, entry) {
-  return voteState.updateIn(['tally', entry], 0, tally => {
-    return tally + 1
-  })
+  const currentPair = voteState.get('pair')
+
+  if (currentPair.includes(entry)) {
+    return voteState.updateIn(['tally', entry], 0, tally => tally + 1)
+  }
+
+  return voteState
 }
